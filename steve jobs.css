@@ -1,11 +1,32 @@
 body {
-  background-image: url("https://images.unsplash.com/photo-1524169358666-79f22534bc6e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5adde3953c33ac273a33a2a990aa7e80&w=1000&q=80");
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&h=350");
   color: white;
 }
 
-p {
-  background-color: white
-  color: white;
+#background {
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&h=350");
+  background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#content {
+  background-color: #1F03FF;
+  border: 2px solid gray;
+  border-radius: 16px;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  min-width: 256px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 h1 {
@@ -13,25 +34,26 @@ h1 {
   background-position: right;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-    list-style-position: inside;
-    border: 1px;
-    display: flex;
-    list-style: none;
-    text-align: center;
+nav ul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+	list-style-type: none;
+	background-color: black;
+	border: 2px solid gray;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 1em;
 }
 
 li {
     display: inline;
-    background-color: red;
     color: white;
     margin: 30px;
     font-size: 20px;
     text-align: center;
+    float: inherit;
 }
 
 h2 {
@@ -40,5 +62,26 @@ h2 {
 
 div {
     text-align: center;
+    color: white;
+}
+
+li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline;
+  color: white;
+  margin: 30px;
+  font-size: 20px;
+  text-align: center;
+  float: inherit;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+}
+
+.active {
+    background-color: green;
     color: white;
 }
